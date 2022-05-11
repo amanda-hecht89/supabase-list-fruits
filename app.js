@@ -8,8 +8,15 @@ const fruitEl = document.getElementById('food');
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
-  for (let fruit of food) {
-    const fruitdiv = renderFruit(fruit);
-    fruitEl.append(fruitdiv);
-    getFruit(),
+  async function loadData() {
+      const food = await getFruit();
+    
+      for (let fruit of food) {
+          const fruitdiv = renderFruit(fruit);
+          fruitEl.append(fruitdiv);
+          getFruit(),  
+      }
+
   }
+
+  loadData();
