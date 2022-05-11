@@ -10,6 +10,7 @@ const fruitEl = document.getElementById('food');
   // update DOM to reflect the new state
   async function loadData() {
       const food = await getFruit();
+      const fruitEl = document.querySelector('fruitEl')
     
       for (let fruit of food) {
           const fruitdiv = renderFruit(fruit);
