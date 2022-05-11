@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import { getFruit } from './fetch-utils.js';
 import { food } from './fruit.js';
 import { renderFruit } from './utils.js';
 // let state
@@ -10,3 +11,5 @@ const fruitEl = document.getElementById('food');
   for (let fruit of food) {
     const fruitdiv = renderFruit(fruit);
     fruitEl.append(fruitdiv);
+    getFruit(),
+  }
