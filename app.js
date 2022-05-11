@@ -2,22 +2,22 @@
 import { getFruit } from './fetch-utils.js';
 import { renderFruit } from './utils.js';
 // let state
-const fruitEl = document.getElementById('food');
+const fruitsEl = document.getElementById('fruits');
+
 // set event listeners 
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
 async function loadData() {
-    const food = await getFruit();
-    console.log(food);
-    const fruitEl = document.querySelector('fruitEl');
+    const fruits = await getFruit();
+   // const fruitsEl = document.querySelector('fruitEl');
     
-    for (let fruit of food) {
+    for (let fruit of fruits) {
         const fruitdiv = renderFruit(fruit);
-        fruitEl.append(fruitdiv);
-        getFruit();
+        fruitsEl.append(fruitdiv);
+      //  getFruit();
     }
-    console.log(getFruit);
+
 }
 
 loadData();
