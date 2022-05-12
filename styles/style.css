@@ -29,6 +29,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(https://www.cookingclassy.com/wp-content/uploads/2019/05/fruit-salad-2-500x375.jpg);
 }
 
 main {
@@ -106,4 +107,5 @@ img {
 
 #fruits {
     display: flex
+
 }
