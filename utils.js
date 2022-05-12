@@ -15,9 +15,12 @@ export function renderFruit(food) {
     a.href = `./fruits/?id=${food.id}`;
 
     const p = document.createElement('p');
-    p.textContent = `${food.name} ia a ${food.color} ${food.type}`;
+    p.textContent = `${food.name} is a ${food.color} ${food.type}`;
+
+    const p2 = document.createElement('p2');
+    p2.textContent = `${food.description}`;
     
-    div.append(a, img, p,);
+    div.append(a, img, p, p2);
     a.append(h1);
     return div;
 }

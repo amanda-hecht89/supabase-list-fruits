@@ -103,3 +103,7 @@ footer {
 img {
     height: 150px;
 }
+
+#fruits {
+    display: flex
+}
