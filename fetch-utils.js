@@ -7,3 +7,8 @@ export async function getFruit() {
     const resp = await client.from('Fruits').select('*');
     return resp.data;
 }
+export async function getFruitById(id) {
+    const resp = await client.from('Fruits').select('*').match({ id }).single();
+    return resp.data;
+
+}

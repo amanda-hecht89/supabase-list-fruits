@@ -1,17 +1,4 @@
 
-import { getFruit } from '../fetch-utils.js';
-
-const fruitDetailContainer = document.getElementById('fruit-detail-container');
-
-export async function loadData() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const gross = await getFruit(id);
-    const meat = renderFruit(gross);
-
-    fruitDetailContainer.append(meat);
-}
-
 
 
 export function renderFruit(food) {
@@ -25,7 +12,7 @@ export function renderFruit(food) {
     img.src = food.photo;
 
     const a = document.createElement('a');
-    a.href = `/fruits/?id=${food.id}`;
+    a.href = `./fruits/?id=${food.id}`;
 
     const p = document.createElement('p');
     p.textContent = `${food.name} ia a ${food.color} ${food.type}`;
@@ -34,5 +21,3 @@ export function renderFruit(food) {
     a.append(div);
     return a;
 }
-
-

@@ -15,7 +15,6 @@ async function loadData() {
     for (let fruit of fruits) {
         const fruitdiv = renderFruit(fruit);
         fruitsEl.append(fruitdiv);
-      //  getFruit();
     }
 
 }
