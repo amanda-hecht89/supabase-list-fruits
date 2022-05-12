@@ -6,7 +6,7 @@ export function renderFruit(food) {
     div.classList.add('fruits');
     console.log(renderFruit);
     const h1 = document.createElement('h1');
-    h1.textContent = food.fruit;
+    h1.textContent = food.name;
 
     const img = document.createElement('img');
     img.src = food.photo;
@@ -17,7 +17,7 @@ export function renderFruit(food) {
     const p = document.createElement('p');
     p.textContent = `${food.name} ia a ${food.color} ${food.type}`;
     
-    div.append(h1, img, p,);
-    a.append(div);
-    return a;
+    div.append(a, img, p,);
+    a.append(h1);
+    return div;
 }
