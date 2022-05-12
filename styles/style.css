@@ -29,7 +29,6 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-    background-image: url(https://www.cookingclassy.com/wp-content/uploads/2019/05/fruit-salad-2-500x375.jpg);
 }
 
 main {
@@ -38,6 +37,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url(https://www.cookingclassy.com/wp-content/uploads/2019/05/fruit-salad-2-500x375.jpg);
 }
 
 section {
@@ -51,7 +51,10 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
+    width: 45%;
     border: solid 2px var(--color1);
+    background-image: url(https://wallpaperaccess.com/full/2666016.png); 
+    
 }
 
 header {
@@ -71,10 +74,17 @@ header {
     align-items: flex-start;
 }
 
+a {
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .gutter-right {
@@ -87,8 +97,8 @@ header img {
 
 p {
     margin: var(--gutter);
+    display: flex;
 }
-  
 footer {
     position: fixed;
     width: 100%;
@@ -102,10 +112,10 @@ footer {
 
 
 img {
-    height: 150px;
+    height: 100px;
 }
 
 #fruits {
-    display: flex
+    flex-direction: column
 
 }

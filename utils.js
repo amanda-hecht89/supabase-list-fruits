@@ -20,7 +20,7 @@ export function renderFruit(food) {
     const p2 = document.createElement('p2');
     p2.textContent = `${food.description}`;
     
-    div.append(a, img);
+    div.append(a);
     a.append(h1);
     return div;
 }
